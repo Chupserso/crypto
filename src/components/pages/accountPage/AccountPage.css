@@ -1,0 +1,339 @@
+body {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+.container {
+    width: 540px;
+    background-color: #000000;
+    margin: 0 auto;
+}
+.edit-container input {
+    margin-left: 5px;
+}
+.balance-text {
+    color: #939393;
+}
+.balance-text img {
+    margin-left: 0px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    padding-bottom: 10px;
+    margin: 0 30px;
+}
+.header .time {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.header .icons {
+    display: flex;
+    gap: 10px;
+}
+.header .icons i {
+    font-size: 20px;
+}
+.title {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title span {
+    margin-left: 20px;
+}
+.title .icons {
+    display: flex;
+}
+.title .icons div {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.icons .fa {
+    font-size: 25px;
+}
+.title .icons div:last-child {
+    margin-right: 0;
+}
+.balance-card {
+    margin: 0 20px;
+    background-color: #161a1f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.balance-card .balance {
+    font-size: 36px;
+    margin: 10px 0;
+    margin-top: 20px;
+}
+.pl-span {
+    color: #888888;
+}
+.balance span {
+    font-size: 20px;
+}
+.balance-card .balance-sub {
+    font-size: 14px;
+    color: #888888;
+    margin-top: -5px;
+}
+.balance-card .balance-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.balance-card .balance-details div .money {
+    display: flex;
+    align-items: end;
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 15px
+}
+.balance-card hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #242424;
+}
+.balance-card .balance-details div .money .number {
+    font-size: 20px;
+    margin-right: 3px;
+}
+.balance-card .balance-details div span {
+    display: block;
+    font-size: 14px;
+    color: #888888;
+}
+.balance-card .balance-details div strong {
+    font-size: 18px;
+}
+.actions {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.actions .action {
+    background-color: #161a1f;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+    color: #acacac;
+}
+.actions .action:first-child {
+    margin-left: 0;
+}
+.actions .action:last-child {
+    margin-right: 0;
+}
+.actions .action i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.crypto-section {
+    background-color: #161a1f;
+}
+.crypto-section .crypto-header {
+    padding: 20px;
+    display: flex;
+    padding-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #242424;
+}
+.crypto-section .crypto-header .title {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(255, 238, 0);
+}
+.crypto-section .crypto-header .toggle {
+    font-size: 18px;
+}
+.crypto-section .crypto-list {
+    padding-top: 0;
+    list-style: none;
+    padding: 20px;
+    margin: 0px;
+}
+.crypto-section .crypto-list .crypto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333333;
+}
+.crypto-section .crypto-list .crypto-item:last-child {
+    border-bottom: none;
+}
+.crypto-section .crypto-list .crypto-item .crypto-info {
+    display: flex;
+    align-items: center;
+}
+.crypto-section .crypto-list .crypto-item .crypto-info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.crypto-section .crypto-list .crypto-item .crypto-info .crypto-name {
+    font-size: 16px;
+}
+.crypto-section .crypto-list .crypto-item .crypto-info .crypto-fullname {
+    font-size: 14px;
+    color: #888888;
+}
+.crypto-section .crypto-list .crypto-item .crypto-balance {
+    text-align: right;
+}
+.crypto-section .crypto-list .crypto-item .crypto-balance .balance {
+    font-size: 16px;
+}
+.crypto-section .crypto-list .crypto-item .crypto-balance .balance-usd {
+    font-size: 14px;
+    color: #888888;
+}
+
+.card-text {
+    font-size: 20px;
+}
+.management {
+    margin: 0 20px;
+    max-width: 100%;
+    background: #161a1f;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.management .img img {
+    width: 40px;
+}
+.line {
+    display: flex;
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.line-first {
+    width: 50%;
+    padding: 1px 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #ffffff;
+}
+.line-second {
+    width: 50%;
+    padding: 1px 0;
+    background-color: #333333;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.zero-balances {
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.zero-balances .imgs {
+    display: flex;
+    align-items: center;
+}
+.zero-balances .imgs div {
+    padding: 15px;
+}
+.zero-balances img {
+     width: 20px;
+}
+.zero-balances .imgs div:last-child {
+    margin-left: -10px;
+}
+.zero-balances div:first-child {
+    display: flex;
+    align-items: center;
+}
+.zero-balances span {
+    margin-left: 10px;
+    color: #929292;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #606060;
+    border-radius: 5px;
+}
+.fa-search {
+    font-size: 20px;
+}
+
+.title .imgs {
+    display: flex;
+    align-items: center;
+}
+
+.edit-container {
+    margin: 50px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(150, 150, 150, 0.1);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-form .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.crypto-edit {
+    margin-top: 20px;
+}
+
+.crypto-edit h4 {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

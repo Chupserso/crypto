@@ -1,0 +1,278 @@
+.container {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.blue-header {
+    background-color: #111417;
+}
+
+.watch-results {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #111417;
+    margin: 0 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.time {
+    font-size: 18px;
+}
+
+.order-time {
+    color: #757575;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.pnl-value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order-data-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+.back-arrow {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.tabs, .sub-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: start;
+}
+
+.tabs span, .sub-tabs span {
+    padding: 5px 10px;
+    color: #757575;
+    cursor: pointer;
+}
+
+
+.tabs span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tabs .active {
+    color: #fff;
+}
+
+.sub-tabs .active {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Меню с тремя элементами */
+.trade-menu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-top: 1px solid #313131;
+    height: 30px;
+}
+
+.trade-menu span {
+    color: #c1c1c1;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Карточки ордеров */
+.order-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.order-header div:first-child {
+    display: flex;
+    align-items: end;
+}
+
+.order-status {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: rgb(176, 84, 84);
+    font-weight: bold;
+    background: rgba(87, 28, 28, 0.5);
+}
+.pair {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.info {
+    color: #757575;
+}
+
+.order-details .order-data-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+.wrap:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.wrap-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap span:first-child {
+    color: #ababab;
+}
+.wrap span:last-child {
+    margin-top: 5px;
+    font-size: 20px;
+}
+.wrap-center span:first-child {
+    color: #ababab;
+}
+.wrap-center span:last-child {
+    margin-top: 5px;
+    font-size: 20px;
+}
+.orders-list {
+    padding: 10px;
+}
+
+.pnl-value {
+    color: red;
+}
+.plus {
+    color: rgb(53 169 118);
+}
+
+.order-hr {
+    border: 1px solid #2a2a2a;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.order-data-item-def {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.order-data-item-def:last-child {
+    margin-bottom: 0;
+}
+.order-data-item-def span:first-child {
+    color: #ababab;
+}
+
+.order-form {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.order-form input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 200px;
+}
+
+.order-form button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.order-time-input {
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+}
+label {
+    margin-left: 100px;
+}
+.short {
+    color: rgb(24 137 88);
+    background: rgba(5, 72, 45, 0.5);
+}
+.nav-title {
+    color: orange;
+}
+.botArrow {
+    margin-left: 10px;
+    width: 8px;
+}
+.history-page input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.history-page select {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.history-page h3 {
+    margin-top: 70px;
+}
