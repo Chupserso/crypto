@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './HistoryPage.css';  // Внешний файл стилей
 import { PhoneHeader } from "../../phoneHeader/PhoneHeader";
 import arrowImg from "./arrow.png";
+import topImg from "./top.png";
 
 const OrderForm = ({ onCreate }) => {
     const [order, setOrder] = useState({
@@ -65,7 +66,7 @@ const OrderForm = ({ onCreate }) => {
 };
 
 const OrderItem = ({ order, onDelete }) => {
-    const statusClassName = order.status === "Закрыть Long" ? "" : "short";
+    const statusClassName = order.pnl > 0 ? "order-plus" : "order-minus";
     const pnlClass = order.pnl < 0 ? "" : "plus";
 
     // Обработчик клика, который вызывает функцию удаления
@@ -262,7 +263,7 @@ export const HistoryPage = () => {
                         <div className="back-arrow">
                             <i className="fas fa-arrow-left"></i>
                         </div>
-                        <div className="nav-title">P&L</div>
+                        <div className="nav-title"><img className="top-img" src={topImg} /> P&L</div>
                     </div>
                     <div className="tabs">
                         <span className="active">Бессрочные</span>

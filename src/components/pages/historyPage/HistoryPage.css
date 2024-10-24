@@ -198,7 +198,7 @@
 }
 
 .pnl-value {
-    color: red;
+    color: rgb(176, 84, 84);
 }
 .plus {
     color: rgb(53 169 118);
@@ -222,7 +222,7 @@
 }
 
 .order-form {
-    margin-top: 150px;
+    margin-top: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,6 +256,15 @@ label {
     color: rgb(24 137 88);
     background: rgba(5, 72, 45, 0.5);
 }
+.order-plus {
+    color: rgb(24 137 88);
+    background: rgba(5, 72, 45, 0.5);
+}
+.order-minus {
+    color: rgb(176, 84, 84);
+    font-weight: bold;
+    background: rgba(87, 28, 28, 0.5);
+}
 .nav-title {
     color: orange;
 }
@@ -275,4 +284,13 @@ label {
 }
 .history-page h3 {
     margin-top: 70px;
+}
+.top-img {
+    width: 20px;
+    margin-right: 5px;
+}
+.nav-title {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
 }

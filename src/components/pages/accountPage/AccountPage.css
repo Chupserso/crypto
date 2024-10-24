@@ -17,26 +17,6 @@ body {
 .balance-text img {
     margin-left: 0px;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    padding-bottom: 10px;
-    margin: 0 30px;
-}
-.header .time {
-    font-size: 25px;
-    font-weight: 500;
-    margin-top: 10px;
-}
-.header .icons {
-    display: flex;
-    gap: 10px;
-}
-.header .icons i {
-    font-size: 20px;
-}
 .title {
     text-align: center;
     font-size: 20px;
