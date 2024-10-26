@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import './HistoryPage.css';  // Внешний файл стилей
 import { PhoneHeader } from "../../phoneHeader/PhoneHeader";
 import arrowImg from "./arrow.png";
-import topImg from "./top.png";
+import topImg from "../../../icons/P&L_icon.svg";
+import docImg from "../../../icons/repair appointment 2_icon.svg"
+import newIcon from "../../../icons/open in new_icon.svg";
 
 const OrderForm = ({ onCreate }) => {
     const [order, setOrder] = useState({
@@ -81,7 +83,7 @@ const OrderItem = ({ order, onDelete }) => {
                     <span className="pair">{order.pair}</span>
                     <span className={"order-status " + statusClassName}>{order.status}</span>
                 </div>
-                <span className="info">Закрытый P&L(USDT)</span>
+                <span className="info">Закрытый P&L(USDT) <img src={newIcon} className="newicon" /></span>
             </div>
             <div className="order-details">
                 <div className="order-time">
@@ -266,8 +268,11 @@ export const HistoryPage = () => {
                         <div className="nav-title"><img className="top-img" src={topImg} /> P&L</div>
                     </div>
                     <div className="tabs">
-                        <span className="active">Бессрочные</span>
-                        <span>Фьючерсы</span>
+                        <div>
+                            <span className="active">Бессрочные</span>
+                            <span>Фьючерсы</span>
+                        </div>
+                        <img src={docImg} className="doc" />
                     </div>
                     <div className="sub-tabs">
                         <span>Ордеры</span>

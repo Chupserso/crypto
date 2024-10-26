@@ -7,6 +7,18 @@ import btcImg from "./btc.png";
 import usdtImg from "./usdt.png";
 import usdcImg from "./usdc.png";
 import etcImg from "./etc.png";
+import backImg from "../../../icons/back_icon.svg";
+import mangImg from "../../../icons/management_icon.svg";
+import eyeImg from "../../../icons/review_icon.svg";
+import appoint1Img from "../../../icons/repair appointment_icon.svg";
+import infoImg from "../../../icons/info_icon.svg";
+import depositImg from "../../../icons/deposit_icon.svg";
+import transferImg from "../../../icons/transfer_icon.svg";
+import conv1Img from "../../../icons/conversion2_icon.svg";
+import loanImg from "../../../icons/loans_icon.svg";
+import rebootImg from "../../../icons/reboot_icon.svg";
+import searchImg from "../../../icons/search_icon.svg";
+import arrowImg from "./arrow.png";
 
 export const AccountPage = () => {
     // Считываем данные из localStorage или устанавливаем значения по умолчанию
@@ -121,14 +133,14 @@ export const AccountPage = () => {
                     <div className="back-arrow"><i className="fas fa-arrow-left text-xl"></i></div>
                     <span>Единый торговый аккаунт</span>
                     <div className="icons">
-                        <div><i class="fa fa-question-circle" aria-hidden="true"></i></div>
-                        <div><i class="fa fa-book" aria-hidden="true"></i></div>
+                        <div><img src={infoImg} /></div>
+                        <div><img src={appoint1Img} /></div>
                     </div>
                 </div>
                 <div className="balance-card">
-                    <div className="balance-text">Баланс средств</div>
+                    <div className="balance-text">Баланс средств <img className="eye" src={eyeImg} /></div>
                     <div className="balance">
-                        {balance} <span>USD</span>
+                        {balance} <span>USD</span> <img className="botArrow" src={arrowImg} />
                     </div>
                     <div className="balance-sub">≈ {btcValue} BTC</div> {/* Редактируемое значение BTC */}
                     <div className="balance-sub" style={{ color: "#fff", marginTop: "10px" }}>
@@ -154,7 +166,7 @@ export const AccountPage = () => {
                 <div className="management">
                     Руководство по Единому торговому аккаунту
                     <div className="img">
-                        <img src={kolpakImg} />
+                        <img src={mangImg} />
                     </div>
                 </div>
                 <div className="line">
@@ -163,16 +175,16 @@ export const AccountPage = () => {
                 </div>
                 <div className="actions">
                     <div className="action">
-                        <i className="fas fa-wallet"></i> Депозит
+                        <img className="act-1" src={depositImg} /> <span className="sp1">Депозит</span>
                     </div>
                     <div className="action">
-                        <i className="fas fa-exchange-alt"></i> Перевод
+                        <img className="act-2" src={transferImg} /> <span className="sp2">Перевод</span>
                     </div>
                     <div className="action">
-                        <i className="fas fa-chart-line"></i> Конвертация
+                        <img className="act-3" src={conv1Img} /> <span className="sp3">Конвертация</span>
                     </div>
                     <div className="action">
-                        <i className="fas fa-file-alt"></i> Займы
+                        <img className="act-4" src={loanImg} /> <span className="sp4">Займы</span>
                     </div>
                 </div>
                 <div className="crypto-section">
@@ -185,8 +197,8 @@ export const AccountPage = () => {
                             <span>Скрыть нулевые балансы</span>
                         </div>
                         <div className="imgs">
-                            <div><img src={konvImg} /></div>
-                            <div><i class="fa fa-search" aria-hidden="true"></i></div>
+                            <div><img src={rebootImg} /></div>
+                            <div><img src={searchImg} /></div>
                         </div>
                     </div>
                     <div className="crypto-list">
