@@ -378,3 +378,6 @@ h3 {
 .crypto-section img:last-child {
     margin-left: -10px;
 }
+.crypto-item:last-child img {
+    border-radius: 100%;
+}

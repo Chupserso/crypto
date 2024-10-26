@@ -6,7 +6,7 @@ import konvImg from "./conv.png";
 import btcImg from "./btc.png";
 import usdtImg from "./usdt.png";
 import usdcImg from "./usdc.png";
-import etcImg from "./etc.png";
+import etcImg from "../../../icons/etc.svg";
 import backImg from "../../../icons/back_icon.svg";
 import mangImg from "../../../icons/management_icon.svg";
 import eyeImg from "../../../icons/review_icon.svg";
@@ -203,13 +203,19 @@ export const AccountPage = () => {
                     </div>
                     <div className="crypto-list">
                         {Object.entries(crypto).map(([key, data]) => {
+                            let img = data.image;
+
+                            if (data.name == "Ethereum") {
+                                img = etcImg;
+                            }
+
                             return (
                                 <div key={key} className="crypto-item">
                                     <div className="crypto-info">
                                         <img
                                             alt={`${key} icon`}
                                             height="24"
-                                            src={data.image}
+                                            src={img}
                                             width="24"
                                         />
                                         <div>
