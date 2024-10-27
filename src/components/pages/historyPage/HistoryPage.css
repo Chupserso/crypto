@@ -69,6 +69,7 @@
     font-size: 18px;
     font-weight: bold;
     margin-right: 10px;
+    color: #f6b743;
 }
 
 .tabs, .sub-tabs {
@@ -269,7 +270,7 @@ label {
     background: rgba(87, 28, 28, 0.5);
 }
 .nav-title {
-    color: orange;
+    color: #e7ab3b;
 }
 .botArrow {
     margin-left: 10px;

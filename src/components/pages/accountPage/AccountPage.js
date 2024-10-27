@@ -150,13 +150,13 @@ export const AccountPage = () => {
                         <div>
                             <span>Баланс кошелька</span>
                             <span className="money">
-                                <div className="number">{balance}</div> USD
+                                <div className="number">{balance}</div> <span className="usd">USD</span>
                             </span>
                         </div>
                         <div>
                             <span>Нереализованный P&L (бесср. и фьючерсы)</span>
                             <span className="money">
-                                <div className="number">0.00</div> USD
+                                <div className="number">0.00</div> <span className="usd">USD</span>
                             </span>
                         </div>
                     </div>
