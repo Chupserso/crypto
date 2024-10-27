@@ -3,8 +3,8 @@ import "./AccountPage.css";
 import { PhoneHeader } from "../../phoneHeader/PhoneHeader";
 import kolpakImg from "./kolpak.png"
 import konvImg from "./conv.png";
-import btcImg from "./btc.png";
-import usdtImg from "./usdt.png";
+import btcImg from "../../../icons/Bitcoin.svg";
+import usdtImg from "../../../icons/tether green fon_icon.svg";
 import usdcImg from "./usdc.png";
 import etcImg from "../../../icons/etc.svg";
 import backImg from "../../../icons/back_icon.svg";
@@ -204,19 +204,24 @@ export const AccountPage = () => {
                     <div className="crypto-list">
                         {Object.entries(crypto).map(([key, data]) => {
                             let img = data.image;
+                            let classUsdt = "";
 
                             if (data.name == "Ethereum") {
                                 img = etcImg;
+                            } else if (data.name == "Tether USDT") {
+                                img = usdtImg;
+                                classUsdt = "usdt"
+                            } else if (data.name == "Bitcoin") {
+                                img = btcImg;
                             }
 
                             return (
                                 <div key={key} className="crypto-item">
                                     <div className="crypto-info">
                                         <img
+                                            className={classUsdt}
                                             alt={`${key} icon`}
-                                            height="24"
                                             src={img}
-                                            width="24"
                                         />
                                         <div>
                                             <div className="crypto-name">{key}</div>
