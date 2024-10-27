@@ -405,3 +405,10 @@ h3 {
 .new {
     top: 2.5px;
 }
+.hist {
+    top: 10px;
+}
+.right-h {
+    width: 15px;
+    position: relative;
+}
