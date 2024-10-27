@@ -120,7 +120,7 @@ body {
     color: #ffffff;
 }
 .crypto-section {
-    background-color: #161a1f;
+    background-color: #101316;
 }
 .crypto-section .crypto-header {
     padding: 20px;
@@ -151,7 +151,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid #333333;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.crypto-section .crypto-list .crypto-item:last-child {
+    margin-bottom: 0;
 }
 .crypto-section .crypto-list .crypto-item:last-child {
     border-bottom: none;
@@ -383,4 +387,12 @@ h3 {
 }
 .usd {
     margin-bottom: 1px;
+}
+.up {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+    top: 10px;
+    width: 30px;
 }

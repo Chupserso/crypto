@@ -255,6 +255,13 @@ export const HistoryPage = () => {
     }
     const [wifi, setWifi] = useState(localStorage.getItem("wifi"));
 
+    if (localStorage.getItem("days")) {
+        const ok = 1;
+    } else {
+        localStorage.setItem("days", "За 7 дн.");
+    }
+    const [days, setDays] = useState(localStorage.getItem("days"));
+
     return (
         <div className="history-page">
             <div className="container">
@@ -284,12 +291,12 @@ export const HistoryPage = () => {
                     <div className="trade-menu">
                         <span>{tradePair} <img className="botArrow" src={arrowImg} /></span> {/* Здесь отображается редактируемая пара */}
                         <span>Закрытые орд... <img className="botArrow" src={arrowImg} /></span>
-                        <span>За 7 дн. <img className="botArrow" src={arrowImg} /></span>
+                        <span>{days} <img className="botArrow" src={arrowImg} /></span>
                     </div>
                 </div>
 
                 <div className="management" style={{"margin": "0 10px"}}>
-                    Руководство по Единому торговому аккаунту
+                    Смотреть торговые результаты
                     <i className="fas fa-arrow-right"></i>
                 </div>
 
@@ -301,6 +308,19 @@ export const HistoryPage = () => {
 
                 <OrderForm onCreate={handleCreateOrder} />
 
+                <label>Изменить надпись 'За 7 дн.'</label>
+                <br />
+                <input
+                    type="text"
+                    value={days}
+                    onChange={(e) => {
+                        setDays(e.target.value);
+                        localStorage.removeItem("days");
+                        localStorage.setItem("days", e.target.value);
+                    }}
+                    placeholder="Изменить надпись 'За 7 дн.'"
+                />
+                <br />
                 <label>Изменить связь от 0 до 4</label>
                 <br />
                 <input

@@ -19,6 +19,7 @@ import loanImg from "../../../icons/loans_icon.svg";
 import rebootImg from "../../../icons/reboot_icon.svg";
 import searchImg from "../../../icons/search_icon.svg";
 import arrowImg from "./arrow.png";
+import upImg from "./up.svg";
 
 export const AccountPage = () => {
     // Считываем данные из localStorage или устанавливаем значения по умолчанию
@@ -161,7 +162,8 @@ export const AccountPage = () => {
                         </div>
                     </div>
                     <hr />
-                    <span className="card-text">Изолированная маска <i style={{"margin-left": "10px"}} className="fas fa-arrow-right"></i></span>
+                    <span className="card-text">Изолированная маржа  <i style={{"margin-left": "10px"}} className="fas fa-arrow-right"></i></span>
+                    <br /><img src={upImg} className="up" />
                 </div>
                 <div className="management">
                     Руководство по Единому торговому аккаунту
