@@ -5,6 +5,7 @@ import arrowImg from "./arrow.png";
 import topImg from "../../../icons/P&L_icon.svg";
 import docImg from "../../../icons/repair appointment 2_icon.svg"
 import newIcon from "../../../icons/open in new_icon.svg";
+import rightImg from "../accountPage/right.svg";
 
 const OrderForm = ({ onCreate }) => {
     const [order, setOrder] = useState({
@@ -297,7 +298,7 @@ export const HistoryPage = () => {
 
                 <div className="management" style={{"margin": "0 10px"}}>
                     Смотреть торговые результаты
-                    <i className="fas fa-arrow-right"></i>
+                    <img src={rightImg} className="right-h" />
                 </div>
 
                 <div className="orders-list">
