@@ -20,6 +20,7 @@ import rebootImg from "../../../icons/reboot_icon.svg";
 import searchImg from "../../../icons/search_icon.svg";
 import arrowImg from "./arrow.png";
 import upImg from "./up.svg";
+import rightImg from "./right.svg";
 
 export const AccountPage = () => {
     // Считываем данные из localStorage или устанавливаем значения по умолчанию
@@ -145,7 +146,7 @@ export const AccountPage = () => {
                     </div>
                     <div className="balance-sub">≈ {btcValue} BTC</div> {/* Редактируемое значение BTC */}
                     <div className="balance-sub" style={{ color: "#fff", marginTop: "10px" }}>
-                        P&amp;L за сегодня <span className="pl-span">{pnlValue} USD</span> {/* Редактируемое значение P&L */}
+                        P&amp;L за сегодня <span className="pl-span">{pnlValue} USD</span><img className="right" src={rightImg} /> {/* Редактируемое значение P&L */}
                     </div>
                     <div className="balance-details">
                         <div>
@@ -162,7 +163,7 @@ export const AccountPage = () => {
                         </div>
                     </div>
                     <hr />
-                    <span className="card-text">Изолированная маржа  <i style={{"margin-left": "10px"}} className="fas fa-arrow-right"></i></span>
+                    <span className="card-text">Изолированная маржа  <img className="right new" src={rightImg} /></span>
                     <br /><img src={upImg} className="up" />
                 </div>
                 <div className="management">

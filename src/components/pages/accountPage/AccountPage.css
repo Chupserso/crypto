@@ -396,3 +396,12 @@ h3 {
     top: 10px;
     width: 30px;
 }
+.right {
+    width: 15px;
+    position: relative;
+    top: 3px;
+    left: 2px;
+}
+.new {
+    top: 2.5px;
+}
