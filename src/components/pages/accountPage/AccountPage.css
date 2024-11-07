@@ -165,8 +165,8 @@ body {
     align-items: center;
 }
 .crypto-section .crypto-list .crypto-item .crypto-info img {
-    width: 30px;
-    height: 30px;
+/*     width: 30px;
+    height: 30px; */
     margin-right: 10px;
 }
 .crypto-section .crypto-list .crypto-item .crypto-info .crypto-name {
@@ -376,7 +376,7 @@ h3 {
 .zero-balances {
     margin-top: 0px;
 }
-.crypto-section img {
+.crypto-section .zero-balances img {
     width: 30px;
 }
 .crypto-section img:last-child {
@@ -411,4 +411,10 @@ h3 {
 .right-h {
     width: 15px;
     position: relative;
+}
+.crypto-list img {
+    width: 30px;
+}
+.usdt {
+    width: 100px;
 }

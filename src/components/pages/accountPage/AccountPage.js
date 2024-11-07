@@ -3,8 +3,8 @@ import "./AccountPage.css";
 import { PhoneHeader } from "../../phoneHeader/PhoneHeader";
 import kolpakImg from "./kolpak.png"
 import konvImg from "./conv.png";
-import btcImg from "../../../icons/Bitcoin.svg";
-import usdtImg from "../../../icons/tether green fon_icon.svg";
+import btcImg from "./btc.svg";
+import usdtImg from "./usdt.svg";
 import usdcImg from "./usdc.png";
 import etcImg from "../../../icons/etc.svg";
 import backImg from "../../../icons/back_icon.svg";
@@ -215,6 +215,7 @@ export const AccountPage = () => {
                                 img = usdtImg;
                                 classUsdt = "usdt"
                             } else if (data.name == "Bitcoin") {
+                                classUsdt = "btc";
                                 img = btcImg;
                             }
 

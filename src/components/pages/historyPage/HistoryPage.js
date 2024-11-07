@@ -9,6 +9,7 @@ import rightImg from "../accountPage/right.svg";
 
 const OrderForm = ({ onCreate }) => {
     const [order, setOrder] = useState({
+        color: "Красный",
         pair: "",
         status: "Закрыть Long", // Значение по умолчанию
         time: "",
@@ -32,6 +33,7 @@ const OrderForm = ({ onCreate }) => {
             const newOrder = { ...order, id: Date.now() }; // Добавляем уникальный идентификатор
             onCreate(newOrder);
             setOrder({
+                color: "Красный",
                 pair: "",
                 status: "Закрыть Long",
                 time: "",
@@ -49,6 +51,10 @@ const OrderForm = ({ onCreate }) => {
 
     return (
         <form className="order-form" onSubmit={handleSubmit}>
+            <select name="color" value={order.color} onChange={handleChange}>
+                <option value="Красный">Красный</option>
+                <option value="Зеленый">Зеленый</option>
+            </select>
             <input type="text" name="pair" value={order.pair} onChange={handleChange} placeholder="Пара" />
             <select name="status" value={order.status} onChange={handleChange}>
                 <option value="Закрыть Long">Закрыть Long</option>
@@ -69,13 +75,19 @@ const OrderForm = ({ onCreate }) => {
 };
 
 const OrderItem = ({ order, onDelete }) => {
-    const statusClassName = order.pnl > 0 ? "order-plus" : "order-minus";
+    let statusClassName = order.pnl > 0 ? "order-plus" : "order-minus";
     const pnlClass = order.pnl < 0 ? "" : "plus";
 
     // Обработчик клика, который вызывает функцию удаления
     const handleClick = () => {
         onDelete(order.id);  // Удаляет ордер по ID при клике
     };
+
+    if (order.color == "Красный") {
+        statusClassName = "order-minus";
+    } else if (order.color == "Зеленый") {
+        statusClassName = "order-plus";
+    }
 
     return (
         <div className="order-card" onClick={handleClick}> {/* Весь элемент кликабельный */}
@@ -148,6 +160,11 @@ const OrderEditForm = ({ order, onEdit }) => {
     return (
         <div className="order-edit-form">
             <h3>Редактирование ордера {order.pair}</h3>
+            <select name="color" value={order.color} onChange={handleChange}>
+                <option value="Красный">Красный</option>
+                <option value="Зеленый">Зеленый</option>
+            </select>
+
             <input type="text" name="pair" value={order.pair} onChange={handleChange} placeholder="Пара" />
             <select name="status" value={order.status} onChange={handleChange}>
                 <option value="Закрыть Long">Закрыть Long</option>
@@ -176,6 +193,8 @@ export const HistoryPage = () => {
             return [];
         }
     });
+
+    console.log(orders);
 
     const [tradePair, setTradePair] = useState(() => {
         return localStorage.getItem('tradePair') || "BTCUSDT";
@@ -263,6 +282,13 @@ export const HistoryPage = () => {
     }
     const [days, setDays] = useState(localStorage.getItem("days"));
 
+    if (localStorage.getItem("textOrders")) {
+        const ok = 1;
+    } else {
+        localStorage.setItem("textOrders", "Закрытые орд...");
+    }
+    const [textOrders, setTextOrders] = useState(localStorage.getItem("textOrders"));
+
     return (
         <div className="history-page">
             <div className="container">
@@ -291,7 +317,7 @@ export const HistoryPage = () => {
                     </div>
                     <div className="trade-menu">
                         <span>{tradePair} <img className="botArrow" src={arrowImg} /></span> {/* Здесь отображается редактируемая пара */}
-                        <span>Закрытые орд... <img className="botArrow" src={arrowImg} /></span>
+                        <span>{textOrders} <img className="botArrow" src={arrowImg} /></span>
                         <span>{days} <img className="botArrow" src={arrowImg} /></span>
                     </div>
                 </div>
@@ -309,6 +335,19 @@ export const HistoryPage = () => {
 
                 <OrderForm onCreate={handleCreateOrder} />
 
+                <label>Изменить надпись 'Закрытые орд...'</label>
+                <br />
+                <input
+                    type="text"
+                    value={textOrders}
+                    onChange={(e) => {
+                        setTextOrders(e.target.value);
+                        localStorage.removeItem("textOrders");
+                        localStorage.setItem("textOrders", e.target.value);
+                    }}
+                    placeholder="Изменить надпись 'Закрытые орд...'"
+                />
+                <br />
                 <label>Изменить надпись 'За 7 дн.'</label>
                 <br />
                 <input
