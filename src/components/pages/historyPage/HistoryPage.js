@@ -6,6 +6,7 @@ import topImg from "../../../icons/P&L_icon.svg";
 import docImg from "../../../icons/repair appointment 2_icon.svg"
 import newIcon from "../../../icons/open in new_icon.svg";
 import rightImg from "../accountPage/right.svg";
+import Swal from 'sweetalert2'
 
 const OrderForm = ({ onCreate }) => {
     const [order, setOrder] = useState({
@@ -75,12 +76,25 @@ const OrderForm = ({ onCreate }) => {
 };
 
 const OrderItem = ({ order, onDelete }) => {
+    const Swal = require('sweetalert2')
     let statusClassName = order.pnl > 0 ? "order-plus" : "order-minus";
     const pnlClass = order.pnl < 0 ? "" : "plus";
 
     // Обработчик клика, который вызывает функцию удаления
     const handleClick = () => {
-        onDelete(order.id);  // Удаляет ордер по ID при клике
+        Swal.fire({
+            title: "Вы уверенны что хотите удалить?",
+            text: "Вы не сможете вернуть обратно",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Да, удалить!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+                onDelete(order.id);  // Удаляет ордер по ID при клике
+            }
+          });
     };
 
     if (order.color == "Красный") {
