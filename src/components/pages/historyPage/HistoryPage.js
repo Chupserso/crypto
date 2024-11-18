@@ -225,7 +225,7 @@ export const HistoryPage = () => {
     }, [tradePair]);
 
     const handleCreateOrder = (newOrder) => {
-        setOrders([...orders, newOrder]);
+        setOrders([newOrder, ...orders]);
     };
 
     const handleEditOrder = (orderId, fieldName, value) => {
