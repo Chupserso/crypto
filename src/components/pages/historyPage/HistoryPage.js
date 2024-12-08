@@ -323,7 +323,7 @@ export const HistoryPage = () => {
                         <img src={docImg} className="doc" />
                     </div>
                     <div className="sub-tabs">
-                        <span>Ордеры</span>
+                        <span>Ордера</span>
                         <span>Инструменты</span>
                         <span>История ордеров</span>
                         <span className="active">P&L</span>

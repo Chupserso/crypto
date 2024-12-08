@@ -1,5 +1,6 @@
 .container {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+
     color: #fff;
     background-color: #000;
 }
@@ -94,7 +95,7 @@
 
 
 .tabs span {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -147,6 +148,7 @@
 }
 
 .order-status {
+    white-space: nowrap;
     margin-left: 10px;
     padding: 5px;
     border-radius: 4px;
@@ -161,6 +163,7 @@
     font-weight: bold;
 }
 .info {
+    font-size: 10px;
     color: #757575;
 }
 
