@@ -105,8 +105,11 @@ const OrderItem = ({ order, onDelete }) => {
 
     let smallClassName = "";
 
-    if (order.pair.length > 14) {
+    if (order.pair.length > 12) {
         smallClassName = "small"
+    }
+    if (order.pair.length > 16) {
+        smallClassName = "supersmall";
     }
 
     return (
@@ -342,7 +345,7 @@ export const HistoryPage = () => {
                     </div>
                 </div>
 
-                <div className="management" style={{"margin": "0 10px"}}>
+                <div className="management" style={{"margin": "0 20px"}}>
                     Смотреть торговые результаты
                     <img src={rightImg} className="right-h" />
                 </div>
