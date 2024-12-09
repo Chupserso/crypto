@@ -104,12 +104,15 @@ const OrderItem = ({ order, onDelete }) => {
     }
 
     let smallClassName = "";
+    let imgClassname = ""
 
     if (order.pair.length > 12) {
         smallClassName = "small"
+        imgClassname = "smallIMG"
     }
     if (order.pair.length > 16) {
         smallClassName = "supersmall";
+        imgClassname = "supersmallIMG"
     }
 
     return (
@@ -119,7 +122,7 @@ const OrderItem = ({ order, onDelete }) => {
                     <span className="pair">{order.pair}</span>
                     <span className={"order-status " + statusClassName}>{order.status}</span>
                 </div>
-                <span className={"info " + smallClassName}>Закрытый P&L(USDT) <img src={newIcon} className="newicon" /></span>
+                <span className={"info " + smallClassName}>Закрытый P&L(USDT) <img src={newIcon} className={"newicon " + imgClassname} /></span>
             </div>
             <div className="order-details">
                 <div className="order-time">

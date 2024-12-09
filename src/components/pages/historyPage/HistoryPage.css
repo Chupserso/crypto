@@ -329,3 +329,9 @@ label {
     margin-left: -8px;
     width: 45px;
 }
+.smallIMG {
+    width: 40px;
+}
+.supersmallIMG {
+    width: 35px;
+}
