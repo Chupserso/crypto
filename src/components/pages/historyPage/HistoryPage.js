@@ -103,6 +103,12 @@ const OrderItem = ({ order, onDelete }) => {
         statusClassName = "order-plus";
     }
 
+    let smallClassName = "";
+
+    if (order.pair.length > 14) {
+        smallClassName = "small"
+    }
+
     return (
         <div className="order-card" onClick={handleClick}> {/* Весь элемент кликабельный */}
             <div className="order-header">
@@ -110,7 +116,7 @@ const OrderItem = ({ order, onDelete }) => {
                     <span className="pair">{order.pair}</span>
                     <span className={"order-status " + statusClassName}>{order.status}</span>
                 </div>
-                <span className="info">Закрытый P&L(USDT) <img src={newIcon} className="newicon" /></span>
+                <span className={"info " + smallClassName}>Закрытый P&L(USDT) <img src={newIcon} className="newicon" /></span>
             </div>
             <div className="order-details">
                 <div className="order-time">
