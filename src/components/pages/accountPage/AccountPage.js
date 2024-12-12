@@ -22,6 +22,10 @@ import arrowImg from "./arrow.png";
 import upImg from "./up.svg";
 import rightImg from "./right.svg";
 
+import html2canvas from 'html2canvas';
+import { useRef } from "react";
+
+
 export const AccountPage = () => {
     // Считываем данные из localStorage или устанавливаем значения по умолчанию
     const [balance, setBalance] = useState(() => localStorage.getItem("balance") || 8.63);
@@ -130,7 +134,7 @@ export const AccountPage = () => {
     return (
         <>
             <div className="container">
-                <PhoneHeader wifi={wifi} com={com} batteryStyles={batteryStyles} time={time} color={color} />
+                <PhoneHeader battery={battery} wifi={wifi} com={com} batteryStyles={batteryStyles} time={time} color={color} />
                 <div className="title">
                     <div className="back-arrow"><i className="fas fa-arrow-left text-xl"></i></div>
                     <span>Единый торговый аккаунт</span>
@@ -272,13 +276,13 @@ export const AccountPage = () => {
                     min="1"
                     max="3"
                 />
-                <label>Заряд</label>
+                <label>Заряд(должен быть больше 14)</label>
                 <input
                     type="number"
                     value={battery}
                     onChange={onBatteryInput}
                     placeholder="Изменить батарею"
-                    min="1"
+                    min="14"
                     max="100"
                 />
                 <div className="edit-form">

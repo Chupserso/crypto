@@ -319,7 +319,7 @@ export const HistoryPage = () => {
         <div className="history-page">
             <div className="container">
                 <div className="blue-header">
-                    <PhoneHeader wifi={wifi} com={com} batteryStyles={batteryStyles} time={time} color={color} />
+                    <PhoneHeader battery={battery} wifi={wifi} com={com} batteryStyles={batteryStyles} time={time} color={color} />
 
                     <div className="navigation">
                         <div className="back-arrow">
@@ -426,14 +426,14 @@ export const HistoryPage = () => {
                     placeholder="Изменить названия крипты в 3 верхнем меню"
                 />
                 <br />
-                <label>Изменить заряд</label>
+                <label>Изменить заряд(должен быть больше 14)</label>
                 <br />
                 <input
                     type="number"
                     value={battery}
                     onChange={onBatteryInput}
                     placeholder="Изменить батарею"
-                    min="1"
+                    min="14"
                     max="100"
                 />
                 <br />
