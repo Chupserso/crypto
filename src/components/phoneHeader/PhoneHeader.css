@@ -8,7 +8,7 @@
     margin: 0 30px;
 }
 .header .time {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
     margin-top: 0px;
     margin-left: 10px;
@@ -22,8 +22,8 @@
 }
 .battery {
     transform: translate(-50%, -50%);
-    height: 23px;
-    width: 45px;
+    height: 21px;
+    width: 43px;
     background: gray;
     /* border: 1px solid #868686; */
     border-radius: 8px;
@@ -39,7 +39,7 @@
     height: 6px;
     width: 2px;
     background: #868686;
-    left: 47px;
+    left: 45px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 0 3px 3px 0;
@@ -48,13 +48,13 @@
     border-radius: 8px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    height: 23px;
+    height: 21px;
     width: 50%;
 }
 .battery span {
     position: absolute;
     left: 50%;
-    top: 51%;
+    top: 52%;
     transform: translate(-50%, -50%);
     color: #000;
     font-size: 20px;
@@ -78,19 +78,19 @@
     margin-right: 0px;
 }
 .signal1 {
-    height: 10px;
+    height: 8px;
     width: 6px;
 }
 .signal2 {
-    height: 15px;
+    height: 13px;
     width: 6px;
 }
 .signal3 {
-    height: 19px;
+    height: 17px;
     width: 6px;
 }
 .signal4 {
-    height: 23px;
+    height: 21px;
     width: 6px;
 }
 .signal-item {
@@ -111,7 +111,7 @@
     position: relative;
     display: block;
     margin: 0 auto;
-    border: 5px solid transparent;
+    border: 4px solid transparent;
     border-top-color: currentColor; /* Цвет можно задавать через currentColor */
     border-radius: 50%;
 }
@@ -120,7 +120,7 @@
 .wv3 {
     width: 42px;
     height: 40px;
-    margin-top: 5px;
+    margin-top: 6px;
     border-top-color: rgb(255, 255, 255); /* Устанавливаем цвет для этой волны */
 }
 
