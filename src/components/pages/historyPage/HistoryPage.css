@@ -225,7 +225,8 @@
     font-size: 20px;
 }
 .orders-list {
-    padding: 10px 20px;
+    padding: 0px 20px;
+    margin-top: 20px;
 }
 
 .order-data-item span:last-child {
@@ -356,4 +357,11 @@ label {
 }
 .supersmallIMG {
     width: 35px;
+}
+.history-page .management {
+    display: flex;
+    align-items: center;
+}
+.history-page .management span {
+    margin-bottom: 2px;
 }

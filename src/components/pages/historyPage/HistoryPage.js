@@ -350,8 +350,8 @@ export const HistoryPage = () => {
                     </div>
                 </div>
 
-                <div className="management" style={{"margin": "0 20px"}}>
-                    Смотреть торговые результаты
+                <div className="management" style={{"margin": "20px 20px"}}>
+                    <span>Смотреть торговые результаты</span>
                     <img src={rightImg} className="right-h" />
                 </div>
 
