@@ -34,7 +34,7 @@
 
 .order-time {
     color: #757575;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -140,7 +140,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 .order-header div:first-child {
     display: flex;
@@ -191,7 +191,7 @@
 .wrap-center {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 .wrap span:first-child {
     color: #ababab;
@@ -211,8 +211,13 @@
     padding: 10px 20px;
 }
 
+.order-data-item span:last-child {
+    margin-top: 3px;
+}
+
 .pnl-value {
     color: rgb(176, 84, 84);
+    font-size: 22px;
 }
 .plus {
     color: rgb(53 169 118);
