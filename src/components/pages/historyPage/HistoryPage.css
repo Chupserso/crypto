@@ -102,6 +102,16 @@
 .tabs .active {
     color: #fff;
 }
+.active-bl {
+    width: 34px;
+    border-bottom: 2px solid orange;
+    position: relative;
+    top: 10px;
+}
+.active-bl span {
+    position: relative;
+    top: -4px;
+}
 
 .sub-tabs .active {
     color: #fff;
@@ -110,11 +120,17 @@
 
 /* Меню с тремя элементами */
 .trade-menu {
-    display: flex;
-    align-items: center;
     padding: 10px;
     margin: 10px 0;
     border-top: 1px solid #313131;
+    height: 30px;
+}
+.trade-wrap {
+    margin-left: 10px;
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 30px;
 }
 

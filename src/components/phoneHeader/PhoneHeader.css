@@ -15,7 +15,7 @@
 }
 .header .icons {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 .header .icons i {
     font-size: 20px;

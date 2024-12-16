@@ -338,13 +338,15 @@ export const HistoryPage = () => {
                         <span>Ордера</span>
                         <span>Инструменты</span>
                         <span>История ордеров</span>
-                        <span className="active">P&L</span>
+                        <div className="active-bl"><span className="active">P&L</span></div>
                         <span>История</span>
                     </div>
                     <div className="trade-menu">
-                        <span>{tradePair} <img className="botArrow" src={arrowImg} /></span> {/* Здесь отображается редактируемая пара */}
-                        <span>{textOrders} <img className="botArrow" src={arrowImg} /></span>
-                        <span>{days} <img className="botArrow" src={arrowImg} /></span>
+                        <div className="trade-wrap">
+                            <span>{tradePair} <img className="botArrow" src={arrowImg} /></span> {/* Здесь отображается редактируемая пара */}
+                            <span>{textOrders} <img className="botArrow" src={arrowImg} /></span>
+                            <span>{days} <img className="botArrow" src={arrowImg} /></span>
+                        </div>
                     </div>
                 </div>
 
