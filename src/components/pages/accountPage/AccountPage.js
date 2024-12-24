@@ -238,7 +238,7 @@ export const AccountPage = () => {
                                     </div>
                                     <div className="crypto-balance">
                                         <div className="balance">{data.balance}</div>
-                                        <div className="balance-usd">{data.usd} USD</div>
+                                        <div className="balance-usd">≈ {data.usd} USD</div>
                                     </div>
                             </div>
                             )
@@ -246,6 +246,7 @@ export const AccountPage = () => {
                     </div>
                 </div>
             </div>
+            <div className="iphone-line"></div>
 
             {/* Форма для редактирования */}
             <div className="edit-container">

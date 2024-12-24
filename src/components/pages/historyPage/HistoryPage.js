@@ -126,7 +126,7 @@ const OrderItem = ({ order, onDelete }) => {
             </div>
             <div className="order-details">
                 <div className="order-time">
-                    {order.time}<span className={"pnl-value " + pnlClass}>{order.pnl}</span>
+                    <span className="span-time">{order.time}</span><span className={"pnl-value " + pnlClass}>{order.pnl}</span>
                 </div>
                 <div className="order-data">
                     <div className="order-data-wrapper">
@@ -360,6 +360,7 @@ export const HistoryPage = () => {
                         <OrderItem key={index} order={order} onDelete={handleDeleteOrder} />
                     ))}
                 </div>
+                <div className="iphone-line"></div>
 
                 <OrderForm onCreate={handleCreateOrder} />
 
