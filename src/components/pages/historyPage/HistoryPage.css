@@ -43,6 +43,7 @@
 }
 .span-time {
     margin-top: 6px;
+    font-size: 14px;
 }
 .pnl-value {
     font-size: 20px;
@@ -172,7 +173,7 @@
 
 .order-status {
     white-space: nowrap;
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 4px;
     border-radius: 4px;
     font-weight: 500;
