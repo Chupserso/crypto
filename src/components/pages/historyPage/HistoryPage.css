@@ -223,14 +223,14 @@
 }
 .wrap span:last-child {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 19px;
 }
 .wrap-center span:first-child {
     color: #ababab;
 }
 .wrap-center span:last-child {
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 19px;
 }
 .orders-list {
     padding: 0px 20px;
