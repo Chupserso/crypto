@@ -22,13 +22,13 @@
 }
 .battery {
     transform: translate(-50%, -50%);
-    height: 21px;
-    width: 40px;
+    height: 20px;
+    width: 38px;
     background: gray;
     /* border: 1px solid #868686; */
-    border-radius: 8px;
+    border-radius: 7px;
     /* padding: 3px; */
-    margin-top: 20px;
+    margin-top: 21px;
     margin-left: 20px;
     padding-right: 0px;
     padding-left: 0px;
@@ -39,29 +39,29 @@
     height: 6px;
     width: 2px;
     background: #868686;
-    left: 42px;
+    left: 39px;
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 100% 100% 0;
 }
 .part {
-    border-radius: 8px;
+    border-radius: 7px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    height: 21px;
+    height: 20px;
     width: 50%;
 }
 
 .radius {
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
 }.battery span {
     position: absolute;
     left: 50%;
-    top: 52%;
+    top: 53.5%;
     transform: translate(-50%, -50%);
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -78,7 +78,7 @@
 .signal {
     display: flex;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
     margin-right: 0px;
 }
 .signal1 {

@@ -315,6 +315,42 @@ export const HistoryPage = () => {
     }
     const [textOrders, setTextOrders] = useState(localStorage.getItem("textOrders"));
 
+
+    if (localStorage.getItem("tab1")) {
+        const ok = 1;
+    } else {
+        localStorage.setItem("tab1", "Ордера");
+    }
+    const [tab1, setTab1] = useState(localStorage.getItem("tab1"));
+
+    if (localStorage.getItem("tab2")) {
+        const ok = 1;
+    } else {
+        localStorage.setItem("tab2", "Инструменты");
+    }
+    const [tab2, setTab2] = useState(localStorage.getItem("tab2"));
+
+    if (localStorage.getItem("tab3")) {
+        const ok = 1;
+    } else {
+        localStorage.setItem("tab3", "История ордеров");
+    }
+    const [tab3, setTab3] = useState(localStorage.getItem("tab3"));
+
+    if (localStorage.getItem("tab4")) {
+        const ok = 1;
+    } else {
+        localStorage.setItem("tab4", "P&L");
+    }
+    const [tab4, setTab4] = useState(localStorage.getItem("tab4"));
+
+    if (localStorage.getItem("tab5")) {
+        const ok = 1;
+    } else {
+        localStorage.setItem("tab5", "История");
+    }
+    const [tab5, setTab5] = useState(localStorage.getItem("tab5"));
+
     return (
         <div className="history-page">
             <div className="container">
@@ -335,11 +371,11 @@ export const HistoryPage = () => {
                         <img src={docImg} className="doc" />
                     </div>
                     <div className="sub-tabs">
-                        <span>Ордера</span>
-                        <span>Инструменты</span>
-                        <span>История ордеров</span>
-                        <div className="active-bl"><span className="active">P&L</span></div>
-                        <span>История</span>
+                        <span>{tab1}</span>
+                        <span>{tab2}</span>
+                        <span>{tab3}</span>
+                        <div className="active-bl"><span className="active">{tab4}</span></div>
+                        <span>{tab5}</span>
                     </div>
                     <div className="trade-menu">
                         <div className="trade-wrap">
@@ -363,6 +399,78 @@ export const HistoryPage = () => {
                 <div className="iphone-line"></div>
 
                 <OrderForm onCreate={handleCreateOrder} />
+
+
+                <label>Изменить пункт меню 1:</label>
+                <br />
+                <input
+                    type="text"
+                    value={tab1}
+                    onChange={(e) => {
+                        setTab1(e.target.value);
+                        localStorage.removeItem("tab1");
+                        localStorage.setItem("tab1", e.target.value);
+                    }}
+                    placeholder="Изменить пункт меню 1:"
+                />
+                <br />
+
+                <label>Изменить пункт меню 2:</label>
+                <br />
+                <input
+                    type="text"
+                    value={tab2}
+                    onChange={(e) => {
+                        setTab2(e.target.value);
+                        localStorage.removeItem("tab2");
+                        localStorage.setItem("tab2", e.target.value);
+                    }}
+                    placeholder="Изменить пункт меню 2:"
+                />
+                <br />
+
+                <label>Изменить пункт меню 3:</label>
+                <br />
+                <input
+                    type="text"
+                    value={tab3}
+                    onChange={(e) => {
+                        setTab3(e.target.value);
+                        localStorage.removeItem("tab3");
+                        localStorage.setItem("tab3", e.target.value);
+                    }}
+                    placeholder="Изменить пункт меню 3:"
+                />
+                <br />
+
+                <label>Изменить пункт меню 4:</label>
+                <br />
+                <input
+                    type="text"
+                    value={tab4}
+                    onChange={(e) => {
+                        setTab4(e.target.value);
+                        localStorage.removeItem("tab4");
+                        localStorage.setItem("tab4", e.target.value);
+                    }}
+                    placeholder="Изменить пункт меню 4:"
+                />
+                <br />
+
+                <label>Изменить пункт меню 5:</label>
+                <br />
+                <input
+                    type="text"
+                    value={tab5}
+                    onChange={(e) => {
+                        setTab5(e.target.value);
+                        localStorage.removeItem("tab5");
+                        localStorage.setItem("tab5", e.target.value);
+                    }}
+                    placeholder="Изменить пункт меню 5:"
+                />
+                <br />
+
 
                 <label>Изменить надпись 'Закрытые орд...'</label>
                 <br />
