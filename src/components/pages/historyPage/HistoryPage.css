@@ -339,16 +339,16 @@ label {
     margin-top: 0;
 }
 .top-img {
-    width: 60px;
-    margin-right: -15px;
+    width: 50px;
+    margin-right: -13px;
 }
 .nav-title {
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 13px;
 }
 .doc {
-    width: 30px;
+    width: 22px;
 }
 .tabs {
     padding: 0 20px;
