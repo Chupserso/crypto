@@ -42,10 +42,11 @@
     align-items: start;
 }
 .span-time {
-    margin-top: 6px;
+    margin-top: -5px;
     font-size: 14px;
 }
 .pnl-value {
+    margin-top: -10px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -71,6 +72,7 @@
 .back-arrow {
     font-size: 20px;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 .nav-title {
@@ -103,7 +105,7 @@
 
 .tabs span {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .tabs .active {
@@ -122,7 +124,7 @@
 
 .sub-tabs .active {
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /* Меню с тремя элементами */
