@@ -187,7 +187,7 @@
 .pair {
     color: #fff;
     font-size: 23px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .info {
     font-size: 14px;
@@ -245,7 +245,7 @@
 
 .pnl-value {
     color: rgb(176, 84, 84);
-    font-size: 22px;
+    font-size: 20px;
 }
 .plus {
     color: rgb(53 169 118);
@@ -259,7 +259,7 @@
 .order-data-item-def {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
 }
 .order-data-item-def:last-child {
     margin-bottom: 0;
