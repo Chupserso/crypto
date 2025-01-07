@@ -186,7 +186,7 @@
 }
 .pair {
     color: #fff;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 500;
 }
 .info {
@@ -225,14 +225,14 @@
 }
 .wrap span:last-child {
     margin-top: 5px;
-    font-size: 19px;
+    font-size: 18px;
 }
 .wrap-center span:first-child {
     color: #ababab;
 }
 .wrap-center span:last-child {
     margin-top: 5px;
-    font-size: 19px;
+    font-size: 18px;
 }
 .orders-list {
     padding: 0px 20px;
@@ -263,6 +263,9 @@
 }
 .order-data-item-def:last-child {
     margin-bottom: 0;
+}
+.order-data-item-def span {
+    font-size: 15px;
 }
 .order-data-item-def span:first-child {
     color: #ababab;
@@ -384,4 +387,11 @@ label {
     left: 50%;
     bottom: 10px;
     transform: translate(-50%);
+}
+.order-data-item span:first-child {
+    font-size: 14px;
+}
+.order-data-item span:last-child {
+    margin-top: 5px;
+    font-size: 18px;
 }
