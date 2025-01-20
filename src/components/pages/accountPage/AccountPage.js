@@ -133,7 +133,7 @@ export const AccountPage = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container-acc">
                 <PhoneHeader battery={battery} wifi={wifi} com={com} batteryStyles={batteryStyles} time={time} color={color} />
                 <div className="title">
                     <div className="back-arrow"><i className="fas fa-arrow-left text-xl"></i></div>

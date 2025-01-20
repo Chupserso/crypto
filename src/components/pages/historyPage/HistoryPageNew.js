@@ -362,7 +362,8 @@ export const HistoryPageNew = () => {
 
     return (
         <div className="history-page">
-            <div className="container">
+            <div className="container hist-cont">
+                <div className="wrapp">
                 <div className="blue-header">
                     <PhoneHeader battery={battery} wifi={wifi} com={com} batteryStyles={batteryStyles} time={time} color={color} />
 
@@ -402,7 +403,8 @@ export const HistoryPageNew = () => {
                         <OrderItem key={index} order={order} onDelete={handleDeleteOrder} />
                     ))}
                 </div>
-                <div className="iphone-line"></div>
+                <div className="iphone-line1"></div>
+                </div>
 
                 <OrderForm onCreate={handleCreateOrder} />
 
