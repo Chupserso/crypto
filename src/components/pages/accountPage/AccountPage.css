@@ -1,10 +1,9 @@
 body {
     color: #ffffff;
-    font-family: Arial, sans-serif;
     padding: 0;
 }
 .container {
-    width: 515px;
+    width: 490px;
     background-color: #000000;
     margin: 0 auto;
 }
