@@ -402,8 +402,8 @@ label {
     border-radius: 10px;
     height: 8px;
     background: #fff;
-    position: absolute;
-    top: 680px;
+    position: fixed;
+    bottom: 10px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -437,7 +437,7 @@ label {
     margin-top: -3px;
 }
 .wrapp {
-    height: 694px;
+    height: 990px;
     overflow-y: scroll;
     background: #000;
 }
