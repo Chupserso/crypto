@@ -56,11 +56,11 @@
 }
 .span-time {
     margin-top: -5px;
-    font-size: 14px;
+    font-size: 13px;
 }
 .pnl-value {
     margin-top: -10px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "SF";
     font-weight: 600;
 }
@@ -159,7 +159,7 @@
 
 .trade-menu span {
     color: #c1c1c1;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     margin-right: 20px;
     display: flex;
@@ -203,7 +203,7 @@
 }
 .pair {
     color: #fff;
-    font-size: 19px;
+    font-size: 18px;
     font-family: "SF";
 }
 .info {
@@ -276,7 +276,7 @@
     margin-bottom: 0;
 }
 .order-data-item-def span {
-    font-size: 15px;
+    font-size: 14px;
 }
 .order-data-item-def span:first-child {
     color: #ababab;
@@ -395,11 +395,11 @@ label {
     margin-bottom: 2px;
 }
 .order-data-item span:first-child {
-    font-size: 14px;
+    font-size: 13px;
 }
 .order-data-item span:last-child {
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 200;
 }
 .leftArrow {
