@@ -403,7 +403,9 @@ export const HistoryPageNew = () => {
                         <OrderItem key={index} order={order} onDelete={handleDeleteOrder} />
                     ))}
                 </div>
-                <div className="iphone-line1"></div>
+                <div className="line-wrapp">
+                    <div className="iphone-line1"></div>
+                    </div>
                 </div>
 
                 <OrderForm onCreate={handleCreateOrder} />
