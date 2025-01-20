@@ -402,8 +402,8 @@ label {
     border-radius: 10px;
     height: 8px;
     background: #fff;
-    position: fixed;
-    bottom: 10px;
+    position: absolute;
+    bottom: 136px;
     left: 50%;
     transform: translate(-50%);
 }
