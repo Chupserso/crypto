@@ -135,7 +135,7 @@ const OrderItem = ({ order, onDelete }) => {
                 <div className="order-data">
                     <div className="order-data-wrapper">
                         <div className="order-data-item wrap">
-                            <span>Кол-во</span>
+                            <span>Кол-во ордеров</span>
                             <span>{order.amount}</span>
                         </div>
                         <div className="order-data-item wrap-center">

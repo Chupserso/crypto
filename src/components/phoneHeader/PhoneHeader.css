@@ -24,8 +24,8 @@
 }
 .battery {
     transform: translate(-50%, -50%);
-    height: 18px;
-    width: 35px;
+    height: 17px;
+    width: 33px;
     background: gray;
     /* border: 1px solid #868686; */
     border-radius: 7px;
@@ -41,7 +41,7 @@
     height: 6px;
     width: 2px;
     background: #868686;
-    left: 36px;
+    left: 34px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 0 100% 100% 0;
@@ -50,7 +50,7 @@
     border-radius: 7px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    height: 18px;
+    height: 17px;
     width: 50%;
 }
 
@@ -84,19 +84,19 @@
     margin-right: 3px;
 }
 .signal1 {
-    height: 6px;
+    height: 5px;
     width: 5px;
 }
 .signal2 {
-    height: 10px;
+    height: 9px;
     width: 5px;
 }
 .signal3 {
-    height: 14px;
+    height: 13px;
     width: 5px;
 }
 .signal4 {
-    height: 18px;
+    height: 17px;
     width: 5px;
 }
 .signal-item {
