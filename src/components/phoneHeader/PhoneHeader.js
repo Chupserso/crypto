@@ -52,7 +52,7 @@ export const PhoneHeader = (props) => {
                     <div className={"wv1 wave "}></div>
                 </div>
                 <div className="battery">
-                    <span>{battery}</span>
+                    {/* <span>{battery}</span> */}
                     <div className={"part " + color + " " + radiusClassName} style={batteryStyles}></div>
                 </div>
             </div>
