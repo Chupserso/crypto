@@ -24,21 +24,21 @@
 }
 .battery {
     transform: translate(-50%, -50%);
-    height: 17px;
-    width: 33px;
-    background: gray;
-    /* border: 1px solid #868686; */
+    height: 15px;
+    width: 31px;
+    border: 1px solid #868686;
     border-radius: 7px;
     /* padding: 3px; */
     margin-top: 21px;
     margin-left: 20px;
     padding-right: 0px;
     padding-left: 0px;
+    padding: 1px;
 }
 .battery::before {
     content: '';
     position: absolute;
-    height: 6px;
+    height: 4px;
     width: 2px;
     background: #868686;
     left: 34px;
@@ -47,16 +47,14 @@
     border-radius: 0 100% 100% 0;
 }
 .part {
-    border-radius: 7px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    height: 17px;
+    border-radius: 5px;
+    height: 15px;
     width: 50%;
 }
 
 .radius {
-    border-bottom-right-radius: 7px;
-    border-top-right-radius: 7px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }.battery span {
     position: absolute;
     left: 50%;
