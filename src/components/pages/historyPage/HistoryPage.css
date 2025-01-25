@@ -196,7 +196,7 @@
 }
 .pair {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "IBM Plex Sans", serif;
 }
 .info {
@@ -398,8 +398,8 @@ label {
 }
 .order-data-item span:last-child {
     margin-top: 5px;
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 17px;
+    font-weight: 300;
 }
 .leftArrow {
     width: 20px;
