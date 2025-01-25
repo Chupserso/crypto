@@ -1,16 +1,9 @@
-@font-face {
-    font-family: "SF";
-    src: url(./sf-pro-display/SFPRODISPLAYREGULAR.OTF);
-}
 
-@font-face {
-    font-family: "SF-bold";
-    src: url(./sf-pro-display/SFPRODISPLAYBOLD.OTF);
-    font-weight: bold;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 .container {
-    font-family: 'SF';
+    font-family: "IBM Plex Sans", serif;
     font-family: 500;
 
     color: #fff;
@@ -61,7 +54,7 @@
 .pnl-value {
     margin-top: -10px;
     font-size: 18px;
-    font-family: "SF-bold";
+    font-family: "IBM Plex Sans", serif;
     font-weight: 800;
 }
 
@@ -204,7 +197,7 @@
 .pair {
     color: #fff;
     font-size: 18px;
-    font-family: "SF";
+    font-family: "IBM Plex Sans", serif;
 }
 .info {
     font-size: 12px;

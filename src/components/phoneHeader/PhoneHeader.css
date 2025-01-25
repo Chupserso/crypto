@@ -24,8 +24,8 @@
 }
 .battery {
     transform: translate(-50%, -50%);
-    height: 15px;
-    width: 31px;
+    height: 13px;
+    width: 27px;
     border: 1px solid #868686;
     border-radius: 7px;
     /* padding: 3px; */
@@ -41,14 +41,14 @@
     height: 4px;
     width: 2px;
     background: #868686;
-    left: 34px;
+    left: 30.5px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 0 100% 100% 0;
 }
 .part {
     border-radius: 5px;
-    height: 15px;
+    height: 13px;
     width: 50%;
 }
 
@@ -124,7 +124,7 @@
 .wv3 {
     width: 33px;
     height: 39px;
-    margin-top: 10px;
+    margin-top: 9px;
     border-top-color: rgb(255, 255, 255); /* Устанавливаем цвет для этой волны */
 }
 
